@@ -227,30 +227,52 @@
 display: none;
 }
 .card{
-    width: 88%;
-    height: 150px;
+    width: 95%;
+    height: 100px;
 }
     .Container .bottom img {
         width: 20px;
     }
-}
-body{
-    overflow: hidden;
+    body{
+        overflow: hidden;
 }
 .Main{
     width: 100%;
 }
 
 .Container{
-
+    
     justify-content: center;
     align-items: center;
     max-width: 85%;
-   
+    
+}
+.bottom-search{
+    margin: 0px 4px;
+    margin-bottom: 8px;
+    width: 95%;
+    padding: 0px 10px;
+}
+.Container .greet {
+    font-size: 35px;
+    color: #c4c7c5;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10px 0px;
+    
 }
 .result{
     align-self: flex-start;
     width: 100%;
     word-wrap: break-word;
-    max-height: 78vh;
+    max-height: 65vh;
+}
+.bottom{
+    bottom:15px ;
+    margin: 12px 5px;
+    max-width: 95%;
+    width: 90%;
+}
 }
