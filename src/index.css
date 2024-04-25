@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Josefin+Sans:ital,wght@1,700&family=Kalam&family=League+Spartan&family=Outfit:wght@100..900&family=Poppins:wght@500&display=swap');
+*{
+    font-family: Outfit;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#root{
+    display: flex;
+    min-height: 100vh;
+    animation: fadein 1.5s;
+
+}
+
+@keyframes fadein {
+    
+   0%{
+    opacity: 0;
+   }
+    
+   100%{
+    opacity: 1;
+   }
+}

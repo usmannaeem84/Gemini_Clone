@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SideBar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 12px;
+}
+
+.Menu {
+    display: block;
+    cursor: pointer;
+    margin: 12px 0px;
+    margin-left: 10px;
+}
+
+.SideBar img {
+    width: 20px;
+}
+.Recent{
+    animation: fadein 1.5s;
+}
+.NewChat {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #e6eaf1;
+    
+}
+
+.recentTitle {
+    margin: 20px 0px;
+}
+
+.recentEntery {
+    display: flex;
+    width: 100%;
+  
+    align-items: start;
+    padding: 10px;
+    padding-right: 40px;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.recentEntery:hover {
+    background-color: #e6eaeb;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:650px) {
+    .SideBar{
+        display: none;
+    }
+}

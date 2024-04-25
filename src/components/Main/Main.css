@@ -1,0 +1,256 @@
+.Main {
+    display: inline-flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 65px;
+    width: 100%;
+}
+
+.nav img {
+    width: 48px;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.nav {
+    font-size: 23px;
+    color: #585858;
+}
+
+.Container {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.Container .greet {
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 40px 0px;
+
+}
+
+.Container .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff4496);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Container .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 15px;
+    background-color: #f0f4f9;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    color: #585858;
+    font-size: 17px;
+    border-radius: 12px;
+    margin: 12px 0px;
+    width: 200px;
+}
+
+.card:hover {
+    background-color: #dfe4ea;
+}
+
+.cards img {
+    width: 35px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.bottom-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f4f9;
+    height: 40px;
+    padding: 28px 20px;
+    border-radius: 30px;
+
+}
+
+.bottom {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    padding: 0px 20px;
+    width: 80%;
+    margin: auto;
+    max-width: 80%;
+}
+
+.bottom-search input {
+    outline: none;
+    font-size: 18px;
+    width: 90%;
+    color: #585858;
+    border: none;
+    ;
+    background-color: transparent;
+
+}
+
+.bottom-img img {
+    width: 25px;
+}
+
+.bottom-img {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.bottom-info {
+    font-size: 13px;
+    margin: 4px;
+    color: #585858;
+
+}
+
+.result_title {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 830px;
+    align-items: center;
+}
+
+.result_title img {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.result {
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.result_data {
+    margin: 15px 0px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.result_data img {
+    width: 30px;
+
+
+}
+
+.loader {
+    display: flex;
+    width: 98%;
+    gap: 12px;
+    height: 100px;
+    flex-direction: column;
+
+}
+
+.loader hr {
+    height: 20px;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    border-radius: 4px;
+    border: none;
+    background-size: 800px 50px;
+    animation: loader 3s infinite;
+
+}
+
+.result_data p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+
+    100% {
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width:650px) {
+.Container .cards{
+    gap: 2px;
+    align-items: center;
+    padding-bottom: 30px;
+    justify-content: center;
+    height: 43vh;
+    overflow-y: scroll;
+    margin-bottom: 60px;
+}
+.Container .cards::-webkit-scrollbar{
+display: none;
+}
+.card{
+    width: 88%;
+    height: 150px;
+}
+    .Container .bottom img {
+        width: 20px;
+    }
+}
+body{
+    overflow: hidden;
+}
+.Main{
+    width: 100%;
+}
+
+.Container{
+
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+   
+}
+.result{
+    align-self: flex-start;
+    width: 100%;
+    word-wrap: break-word;
+    max-height: 78vh;
+}
